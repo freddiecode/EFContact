@@ -4,77 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Resources:
-        // https://stackoverflow.com/questions/17723276/delete-a-single-record-from-entity-framework
-        // http://www.java2s.com/Code/CSharp/Language-Basics/Switchbasedconsolemenu.html
-        // https://www.webtrainingroom.com/entityframework/ef-core-console-application
-        // https://stackoverflow.com/questions/3717028/access-list-from-another-class
-
-        //using ContactsContext contactsContext = new ContactsContext();
-
-        //////Get all contacts
-        //var contacts = contactsContext.Contacts
-        //    .OrderBy(c => c.ContactId);
-
-        //foreach (Contact contact in contacts)
-        //{
-        //    Console.WriteLine($"Id: {contact.ContactId}");
-        //    Console.WriteLine($"Name: {contact.ContactName}");
-        //    Console.WriteLine($"Email: {contact.ContactEmail}");
-        //    Console.WriteLine($"Created: {contact.ContactCreatedDate}");
-        //    Console.WriteLine($"Age: {contact.ContactAge}");
-        //    Console.WriteLine($"Contact: { contact.ContactPhoneType} - {contact.ContactPhoneNumber}");
-        //    Console.WriteLine($"Notes: {contact.ContactNotes}");
-        //    Console.WriteLine(new String('-', 20));
-
-        //}
-
-        ////Add a contact
-        //Contact contact = new Contact()
-        //{
-        //    ContactName = "Bodil Hansen",
-        //    ContactEmail = "bodil.hansen@domain.com",
-        //    ContactAge = 38,
-        //    ContactCreatedDate = DateTime.Now,
-        //    ContactPhoneType = "Private",
-        //    ContactNotes = "A thief!"
-        //};
-        //contactsContext.Add(contact);
-        //contactsContext.SaveChanges();
-
-        // Remove a contact
-        //var bodil = contactsContext.Contacts
-        //    .Where(c => c.ContactName == "Bodil Hansen")
-        //    .FirstOrDefault();
-
-        //if (bodil is Contact)
-        //{
-        //    contactsContext.Remove(bodil);
-        //}
-        //contactsContext.SaveChanges();
-
-
-        //Contact _contact = new Contact()
-        //{
-        //    ContactName = "Freddie Christiansen",
-        //    ContactAge = 33,
-        //    ContactCreatedDate = DateTime.Now,
-        //    ContactEmail = "freddie.christiansen@gmail.com",
-        //    ContactNotes = "Me!",
-        //    ContactPhoneNumber = "90975443",
-        //    ContactPhoneType = "Mobile"
-        //};
-        //AddContact(_contact);
-
-        //RemoveContact(6);
 
         bool showMenu = true;
         while (showMenu)
         {
             showMenu = MainMenu();
         }
-
-
     }
 
 
@@ -137,20 +72,6 @@ class Program
             }
         }
     }
-
-
-    // Another RemoveContact method..
-    //public static Contact RemoveContact(Contact contact)
-    //{
-    //    using (ContactsContext context = new ContactsContext())
-    //    {
-    //        context.Contacts.Remove(contact);
-    //        context.SaveChanges();
-    //    }
-    //    return contact;
-    //}
-
-
     private static bool MainMenu()
     {
 
