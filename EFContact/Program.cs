@@ -4,14 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-
         bool showMenu = true;
         while (showMenu)
         {
             showMenu = MainMenu();
         }
     }
-
 
     // List all Contacts
     public static void ListAll()
@@ -56,7 +54,6 @@ class Program
         }
         return contacts;
     }
-
 
     // Remove a Contact
     public static void RemoveContact(int id)
@@ -180,8 +177,4 @@ class Program
                 return true;
         }
     }
-
-
-
-
 }
