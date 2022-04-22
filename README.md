@@ -1,5 +1,1 @@
-## EFContact
-
-### A simple C# Console application with MS SQL Server and Entity Framework Core.
-
-#### UW | C# Programming using .NET Core
+Homework 3 - Add and Delete Records using EF
